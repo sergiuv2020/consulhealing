@@ -1,0 +1,14 @@
+{
+  "watches":[
+  {
+  "type": "checks",
+  "service": "reporting-service",
+  "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+  },
+  {
+  "type": "checks",
+  "service": "reporting",
+  "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+  }
+  ]
+}

@@ -1,0 +1,1 @@
+{"service": {"name": "reporting", "tags": ["prod-reporting"], "port": 80, "address": "0.0.0.0", "check": {"id": "homepage", "name": "Check index.html on port 80","http": "http://172.29.102.94/index.html","interval": "10s","timeout": "2s"}}}
