@@ -1,14 +1,24 @@
 {
-  "watches":[
-  {
-  "type": "checks",
-  "service": "reporting-service",
-  "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
-  },
-  {
-  "type": "checks",
-  "service": "reporting",
-  "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
-  }
+  "watches": [
+    {
+      "type": "checks",
+      "service": "backend-dev",
+      "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+    },
+    {
+      "type": "checks",
+      "service": "backend-prod",
+      "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+    },
+    {
+      "type": "checks",
+      "service": "frontend-dev",
+      "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+    },
+    {
+      "type": "checks",
+      "service": "frontend-prod",
+      "handler": "/etc/consul.d/scripts/manage_watches.sh >> /tmp/consul/logs/watches.log"
+    }
   ]
 }
